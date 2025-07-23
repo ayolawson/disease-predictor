@@ -1,0 +1,41 @@
+<!-- File: templates/result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result - Diagnosis Outcome</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Diagnosis Result</h1>
+        <p class="tagline">Here is your predicted disease and recommended treatment</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('diagnosis') }}">Diagnose Again</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Prediction: <span style="color: #0077cc">{{ prediction }}</span></h2>
+            <p><strong>Recommended Treatment:</strong></p>
+            <div style="background-color: #f2f2f2; padding: 15px; border-radius: 5px;">
+                <pre>{{ treatment }}</pre>
+            </div>
+        </section>
+
+        <div class="cta">
+            <a href="{{ url_for('diagnosis') }}" class="button">Diagnose Another</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Predictive Diagnosis App | Developed by Lawson Arogbo Ayodele</p>
+    </footer>
+</body>
+</html>

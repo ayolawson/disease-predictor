@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Disease Diagnosis System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Disease Diagnosis & Treatment System</h1>
+        <p class="tagline">A Predictive Analytics Model for Disease Diagnosis and Treatment</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('diagnosis') }}">Diagnose</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="welcome">
+            <h2>Welcome!</h2>
+            <p>This intelligent web system helps you input your symptoms, predicts your likely disease, and recommends professional treatment — instantly.</p>
+        </section>
+
+        <section class="disease-list">
+            <h3>Diseases Covered</h3>
+            <ul>
+                <li><strong>Flu:</strong> Influenza virus infection</li>
+                <li><strong>Asthma:</strong> Respiratory airway inflammation</li>
+                <li><strong>Pneumonia:</strong> Lung infection</li>
+                <li><strong>Anxiety:</strong> Mental health condition</li>
+                <li><strong>Depression:</strong> Mood disorder</li>
+            </ul>
+        </section>
+
+        <div class="cta">
+            <a href="{{ url_for('diagnosis') }}" class="button">Start Diagnosis</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Predictive Diagnosis App | Powered by Flask & Machine Learning</p>
+    </footer>
+</body>
+</html>

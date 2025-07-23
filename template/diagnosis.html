@@ -1,0 +1,38 @@
+<!-- File: templates/diagnosis.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diagnose - Disease Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Symptom Diagnosis</h1>
+        <p class="tagline">Enter your symptoms to get a prediction and treatment recommendation</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('diagnosis') }}">Diagnose</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <form action="{{ url_for('diagnosis') }}" method="POST">
+                <label for="symptoms">Enter symptoms (comma-separated):</label><br>
+                <textarea name="symptoms" rows="4" cols="50" required placeholder="e.g. cough, fever, fatigue"></textarea><br><br>
+
+                <button type="submit" class="button">Diagnose</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Predictive Diagnosis App | Flask & ML Powered</p>
+    </footer>
+</body>
+</html>
