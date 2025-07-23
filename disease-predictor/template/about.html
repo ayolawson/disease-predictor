@@ -1,0 +1,55 @@
+<!-- File: templates/about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About - Disease Diagnosis System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>About This Project</h1>
+        <p class="tagline">A Predictive Analytics Model for Disease Diagnosis and Treatment</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('diagnosis') }}">Diagnose</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Project Overview</h2>
+            <p>This web application uses a machine learning model trained on medical symptom data to predict five common diseases:</p>
+            <ul>
+                <li>Flu</li>
+                <li>Asthma</li>
+                <li>Pneumonia</li>
+                <li>Anxiety</li>
+                <li>Depression</li>
+            </ul>
+            <p>Upon prediction, the system also recommends a professional and medically reviewed treatment guide.</p>
+        </section>
+
+        <section>
+            <h2>Objective</h2>
+            <p>The primary goal of this project is to assist in the early diagnosis and preliminary treatment guidance for patients, especially in resource-limited environments, using AI.</p>
+        </section>
+
+        <section>
+            <h2>Developer</h2>
+            <p><strong>Lawson Arogbo Ayodele</strong><br>
+            Final Year Project - Department of Computer Science<br>
+            4-Unit Capstone Project Submission (2025)</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Predictive Diagnosis App | Built with Flask & Machine Learning</p>
+    </footer>
+</body>
+</html>
+
