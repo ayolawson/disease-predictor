@@ -1,0 +1,91 @@
+/* File: static/styles.css */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f7f9;
+    color: #333;
+}
+
+header {
+    background-color: #0077cc;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.tagline {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+nav {
+    background-color: #004c99;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    box-shadow: 0px 0px 10px #ccc;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+h2, h3 {
+    color: #0077cc;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.cta {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #0077cc;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #eee;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
